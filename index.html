@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title> Star Wars </title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo_aula.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+   
+   
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="icon" />
+
+</head>
+<body>
+    <header class="header">
+       
+        <img src="Imagens/logosw.jpg" alt="LogoSW" class="header_logo">
+
+        <span id="hamburguer"  class="material-symbols-rounded">
+            menu
+            </span>
+
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="#"> Filmes </a></li>
+                <li><a href="#"> Livros </a> </li>
+                <li><a href="#"> Séries </a></li>
+                <li><a href="#"> Músicas </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <section class="img">
+            <!-- <img src="Imagens/Star-Wars.jpg" alt="SW" class="img"> -->
+        </section>
+
+    </main>
+
+    <footer> 
+        <div class="div_pai">
+            
+            <div>
+                <a href="#">
+                <img src="Imagens/turban.png" alt="star" class="imagem">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="Imagens/jedi.png" alt="swords" class="imagem">
+                </a>
+            </div>
+            <div>
+                <a href="#"> 
+                <img src="Imagens/supervillian.png" alt="vilan" class="imagem">
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="Imagens/falcon.png" alt="hhh" class="imagem">
+                </a>
+            </div>
+
+        </div>
+        <p class="texto"> Karoline Suzart- Elas na Tech 2023 </p>
+    
+       
+    </footer>
+    
+  
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+        hamburguer.addEventListener('click',aparecer);
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block'){
+            itens_menu.classList.remove('show');
+        } else {
+            itens_menu.classList.toggle('show');
+        }
+    }
+    </script>
+
+  
+</body>
+</html>
